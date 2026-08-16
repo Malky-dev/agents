@@ -45,8 +45,19 @@ un élargissement matériel du périmètre.
 | Besoin | Agent responsable |
 |---|---|
 | Décomposer, assigner ou arbitrer | `orchestrator` |
+| Clarifier le besoin et les critères produit | `product_manager` |
+| Produire ou analyser une recherche utilisateur | `user_researcher` |
+| Concevoir les parcours et interfaces | `ux_ui_designer` |
+| Définir l'architecture et les contrats | `solution_architect` |
+| Concevoir les données et migrations | `data_engineer` |
 | Implémenter une modification | `implementation_engineer` |
 | Vérifier un livrable | `qa_reviewer` |
+| Examiner les risques de sécurité | `security_engineer` |
+| Préparer CI/CD et environnements | `devops_engineer` |
+| Maintenir la documentation durable | `documentation_writer` |
+| Définir fiabilité et réponse aux incidents | `site_reliability_engineer` |
+| Consolider la préparation d'une version | `release_manager` |
 
-Un nouvel agent n'est ajouté que lorsqu'une responsabilité durable ne peut pas
-être attribuée proprement à l'un de ces trois rôles.
+Le cycle et ses portes sont décrits dans `docs/orchestration/workflow.md`. Tous
+les agents ne sont pas convoqués à chaque tâche : l'orchestrateur sélectionne le
+plus petit ensemble couvrant le périmètre et les risques.
