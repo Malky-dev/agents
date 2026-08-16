@@ -128,6 +128,7 @@ operations, and material external writes always require explicit human approval.
 
 ## Documentation
 
+- [Changelog](CHANGELOG.md)
 - [Operating policy](AGENTS.md)
 - [Orchestration workflow](docs/orchestration/workflow.md)
 - [Handoff template](docs/handoffs/TEMPLATE.md)
