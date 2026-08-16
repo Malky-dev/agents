@@ -25,9 +25,10 @@ Chaque extension sera ajoutée lorsqu'une responsabilité distincte le justifier
 
 - [Instructions communes](AGENTS.md)
 - [Leçon 1 : contrats des agents](docs/learning/01_agent_contracts.md)
+- [Leçon 2 : agents exécutables](docs/learning/02_executable_agents.md)
 - [État courant](docs/project_state.md)
 - [Modèle de transmission](docs/handoffs/TEMPLATE.md)
 
-Les fichiers de `agents/` définissent les rôles. Ils ne constituent pas encore
-une application d'orchestration : cette automatisation sera construite après la
-validation manuelle du premier cycle complet.
+Les fichiers de `agents/` documentent les rôles. Les configurations exécutables
+correspondantes vivent dans `.codex/agents/` et la flotte est réglée par
+`.codex/config.toml`.

@@ -7,15 +7,15 @@ spécialistes ou une orchestration automatisée.
 
 ## Phase
 
-Phase 1 — Contrats des agents.
+Phase 2 — Configuration exécutable des agents.
 
 ## Flotte active
 
 | Agent | Responsabilité | État |
 |---|---|---|
-| `orchestrator` | Décomposer et coordonner | défini |
-| `implementation_engineer` | Implémenter | défini |
-| `qa_reviewer` | Vérifier indépendamment | défini |
+| `orchestrator` | Décomposer et coordonner | configuré |
+| `implementation_engineer` | Implémenter | configuré |
+| `qa_reviewer` | Vérifier indépendamment | configuré |
 
 ## Décisions
 
@@ -26,10 +26,10 @@ Phase 1 — Contrats des agents.
 
 ## Prochaine expérience
 
-Faire exécuter une tâche simple par les trois rôles : planification,
-implémentation, puis vérification indépendante.
+Vérifier la détection des agents dans une nouvelle session, puis faire exécuter
+une tâche simple par les trois rôles : planification, implémentation et revue.
 
-## Critère de passage à la phase 2
+## Critère de passage à la phase 3
 
 Une tâche exemple traverse le cycle complet avec un livrable et des preuves
 compréhensibles par une personne extérieure au projet.
