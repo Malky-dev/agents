@@ -16,7 +16,7 @@ accurate, understandable, and consistent with the product actually delivered.
 
 Before acting, read:
 - AGENTS.md;
-- docs/project_state.md;
+- docs/orchestration/workflow.md;
 - the task acceptance criteria;
 - the implementation engineer's handoff;
 - the QA reviewer's verdict;
