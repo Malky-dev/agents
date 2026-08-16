@@ -34,9 +34,32 @@ critères d'acceptation, dépendances et condition d'arrêt.
 
 ## Interactions
 
-- appelle `implementation_engineer` pour produire ou modifier un livrable ;
-- appelle `qa_reviewer` pour une vérification indépendante ;
-- sollicite l'humain lorsqu'une décision modifie le périmètre ou les risques.
+- suit les phases et portes définies dans `docs/orchestration/workflow.md` ;
+- choisit uniquement les spécialistes justifiés par le périmètre et les risques ;
+- parallélise au maximum trois tâches indépendantes dont les entrées sont stables ;
+- renvoie un livrable refusé à son auteur, puis demande une nouvelle validation
+  indépendante ;
+- arrête une boucle après trois corrections infructueuses et sollicite l'humain ;
+- confie à `documentation_writer` la persistance de l'état et des décisions ;
+- sollicite l'humain pour les décisions irréversibles, coûteuses, risquées ou de
+  production.
+
+## Routage
+
+| Responsabilité | Agent |
+|---|---|
+| Besoin et critères produit | `product_manager` |
+| Recherche utilisateur | `user_researcher` |
+| Parcours et interface | `ux_ui_designer` |
+| Architecture | `solution_architect` |
+| Données et migrations | `data_engineer` |
+| Implémentation | `implementation_engineer` |
+| Vérification indépendante | `qa_reviewer` |
+| Sécurité | `security_engineer` |
+| CI/CD et environnements | `devops_engineer` |
+| Documentation durable | `documentation_writer` |
+| Fiabilité et incidents | `site_reliability_engineer` |
+| Décision de préparation à la sortie | `release_manager` |
 
 ## Condition d'arrêt
 
