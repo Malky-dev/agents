@@ -1,7 +1,7 @@
-# Transmission de tâche
+# Task Handoff
 
-Copier ce modèle dans `docs/handoffs/` uniquement lorsqu'une transmission mérite
-d'être conservée dans l'historique du projet.
+Copy this template into `docs/handoffs/` only when a handoff contains decisions,
+evidence, or operational context that must remain durable beyond the active task.
 
 ```yaml
 task_id: TASK-000
@@ -11,7 +11,7 @@ gate: G0_intake
 from: orchestrator
 to: implementation_engineer
 status: requested
-objective: Résultat observable à obtenir
+objective: Observable outcome to produce
 scope:
   include: []
   exclude: []
@@ -27,10 +27,10 @@ assumptions: []
 approval_required: false
 correction_attempt: 0
 next_recipient: qa_reviewer
-stop_condition: Condition mesurable de fin ou de blocage
+stop_condition: Measurable completion or blocking condition
 ```
 
-## Cycle de statut
+## Status Lifecycle
 
 ```text
 requested -> in_progress -> review -> accepted
@@ -39,5 +39,6 @@ requested -> in_progress -> review -> accepted
 cancelled       blocked   changes_requested -> in_progress
 ```
 
-Une transmission ne contient jamais de secret, de journal brut volumineux ou de
-raisonnement interne. Elle conserve les décisions et preuves utiles.
+A handoff never contains secrets, personal data, large raw logs, or internal
+chain-of-thought. It retains only the decisions, evidence, risks, and context
+required for accountable continuation.
